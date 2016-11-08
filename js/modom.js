@@ -14,29 +14,33 @@
         var text = tag.innerHTML
         return document.querySelector(tag).remove(text)
     }
+    //var remove = function(selector) {
+//         return one(selector).remove()
+// }
 
-    var addClass = function(tag) {
-        return document.querySelector('.sidebar').classList.add(tag)
+    var addClass = function(selector, tag) {
+        document.querySelector(class).classList.add(tag)
     }
-    var removeClass = function(tag) {
-        return document.querySelector('h1').classList.remove(tag)
+
+    var removeClass = function(selector, tag) {
+        return document.querySelector().classList.remove(tag)
     }
-    var hasClass = function(element) {
+    var hasClass = function(element, selector) {
         var itDoes = document.querySelector(element)
-        return itDoes.classList.contains('navbar-collapse')
+        return itDoes.classList.contains(selector)
 
     }
-    var getAttr = function(attribute) {
-        return document.querySelector(attribute).getAttribute('data-toggle')
+    var getAttr = function(attribute, selector) {
+        return document.querySelector(attribute).getAttribute(selector)
 
     }
-    var setAttr = function(attribute, attributeValue) {
-        return document.querySelector('input').setAttribute(attribute, attributeValue)
+    var setAttr = function(selector, attribute, attributeValue) {
+        return document.querySelector(selector).setAttribute(attribute, attributeValue)
 
     }
-    var setHTML = function(tag) {
+    var setHTML = function(tag, newWords) {
         var newHeadline = document.querySelector(tag)
-        return newHeadline.innerHTML = 'This is my page now!'
+        return newHeadline.innerHTML = newWords
     }
     var getHTML = function(tag) {
         var newHeadline = document.querySelector(tag).innerHTML
